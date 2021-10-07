@@ -11,7 +11,10 @@ h1, h2, h3, h4, h5, h6, p{
   font-weight: 300;
   margin-bottom: 0px;
 }
-
+img{
+  width:auto;
+  height:auto;
+}
 label{
   font-family: 'Poppins', sans-serif;
 }
@@ -541,7 +544,8 @@ label{
 .banner-organization{
   background-repeat: no-repeat;
   background-image:url('./organization-bg.png');
-  background-size: cover;
+  background-size: auto;
+  background-position: top right;
 }
 .banner-business{
   background-repeat: no-repeat;
@@ -551,7 +555,7 @@ label{
 }
 .banner-freelancers{
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top right;
   background-size: contain;
   background-image:url('./freelancers-bg.png');
 }
@@ -749,7 +753,31 @@ label{
     background-image: url('./business-bg-m.png');
   } */
 }
-
+@media(min-width:768px) and (max-width:1024px){
+  .tab-height{
+    height:auto !important;
+  }
+  .tab-img{
+    width:80% !important;
+  }
+  .h-1, .h_1{
+    font-size:35px;
+  }
+  .pt-50{
+    padding-top:35px;
+  }
+  .fs-50{
+    font-size:35px !important;
+  }
+  .tab-flex-end{
+    display:flex;
+    justify-content: flex-start;
+  }
+  .footer-ul{
+    padding-left:0px;
+    margin-top: 30px;;
+  }
+}
 @media (min-width:768px) and (max-width:834px){
   .h-1{
     font-size:30px;
@@ -799,7 +827,7 @@ label{
     text-align: right;
   }
 }
-@media(max-width:420px){
+@media(max-width:480px){
   .mb-50{
     margin-bottom:30px;
   }

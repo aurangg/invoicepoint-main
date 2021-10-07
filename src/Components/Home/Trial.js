@@ -20,7 +20,7 @@ export default function Trial() {
                         </div>
                     </div>
                     <div className="col-lg-6 free tab-center">
-                        <img src="/images/Mask Group 10.png" className="freeimg" alt="free-trial" />
+                        <img src="/images/Mask Group 10.png" className="freeimg tab-img" alt="free-trial" />
                     </div>
                 </div>
             </div>
