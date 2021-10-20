@@ -107,7 +107,8 @@ label{
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   transition: .3s;
-  font-size:16px;
+  font-size:14px;
+  font-weight: 300;
 }
 .end-footer .footer-ul .footer-li a:hover{
   opacity:0.5;
@@ -343,12 +344,6 @@ label{
 .height-90{
   height:90vh;
 }
-.height-85{
-  height: 85vh;
-}
-.height-80{
-  height:80vh;
-}
 .height-70{
   height:70vh;
 }
@@ -545,11 +540,11 @@ label{
   background-repeat: no-repeat;
   background-image:url('./organization-bg.png');
   background-size: auto;
-  background-position: top right;
+  background-position: center;
 }
 .banner-business{
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top right;
   background-size: contain;
   background-image:url('./business-bg.png'); 
 }
@@ -730,7 +725,19 @@ label{
     opacity: 1;
   }
 }
-
+@media(min-width:1024px){
+  .height-80{
+    height:70vh;
+  }
+  .height-85{
+    height: 85vh;
+  }
+}
+@media(max-width:1024px){
+  .banner-business{
+    background-size: cover;
+  }
+}
 @media (max-width: 1000px) {
   /* .banner-freelancers{
     background-image: none;
@@ -846,6 +853,9 @@ label{
   }
   .height-85{
     height:auto;
+  }
+  .height-80{
+    height:80vh;
   }
   .classic-img{
     display: block;
