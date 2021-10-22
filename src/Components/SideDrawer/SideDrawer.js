@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './sidedrawer.css';
 
 
@@ -17,44 +17,44 @@ const sideDrawer = props => {
                     <img src={`${process.env.PUBLIC_URL}/images/main-logo.png`} alt="menu-icon" />
                 </li>
                 <li>
-                    <Link to="/">
+                    <NavLink exact={true} activeStyle={{color:"#27c492"}} to="/">
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/freelancers">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/freelancers">
                         Freelancers
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/small-business">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/small-business">
                         Small Business
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/organization">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/organization">
                         Organizations
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/privacy-policy">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/privacy-policy">
                         Privacy Policy
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/faqs">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/faqs">
                         FAQs
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/pricing">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/pricing">
                         Pricing
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/terms-of-service">
+                    <NavLink activeStyle={{color:"#27c492"}} to="/terms-of-service">
                         Terms & Conditions
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

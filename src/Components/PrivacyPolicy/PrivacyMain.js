@@ -22,7 +22,6 @@ import Footer from '../Footer/Footer';
 import Loader from '../../loader/Loader';
 
 function PrivacyMain(){
-    console.log("inside")
     useEffect(() => {
         document.title = "Privacy Policy | InvoicePoint"
    }, []);

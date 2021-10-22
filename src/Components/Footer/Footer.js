@@ -7,13 +7,12 @@ function Footer(){
         <footer className="spt-90 end-footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-4">
                         <img src={`${process.env.PUBLIC_URL}/images/main-logo.png`} alt="menu-icon" />
                     </div>
-                    <div className="col-lg-6"></div>
-                </div>
-                <div className="row">
-                <div className="col-6">
+                    
+                
+                <div className="col-lg-4">
                         <div className="flex-end tab-flex-end">
                             <ul className="footer-ul">
                                 <li className="footer-li">
@@ -39,7 +38,7 @@ function Footer(){
                             </ul>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-lg-4 sb-90">
                         <div className="flex-end tab-flex-end">
                             <ul className="footer-ul">
                                 <li className="footer-li">

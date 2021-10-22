@@ -1,49 +1,49 @@
 import React from 'react';
 import Toggle from '../SideDrawer/Toggle';
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './toolbar.css';
 
 const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar-navigation">
-            <Link to="/">
+            <NavLink exact={true} activeStyle={{borderBottom:"2px solid #fff"}} to="/">
                 <div className="toolbar-logo">
                     <img src={`${process.env.PUBLIC_URL}/images/main-logo.png`} alt="menu-icon" />
                 </div>
-            </Link>
+            </NavLink>
             <div className="spacer"></div>
             <Toggle click={props.drawerClickHandler} />
             <div className="toolbar-navigation-items">
                 <ul>
                     <li>
-                        <Link to="/">
+                        <NavLink exact={true} activeStyle={{borderBottom:"2px solid #fff"}} to="/">
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/freelancers">
+                        <NavLink activeStyle={{borderBottom:"2px solid #fff"}} to="/freelancers">
                             Freelancers
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/small-business">
+                        <NavLink activeStyle={{borderBottom:"2px solid #fff"}} to="/small-business">
                             Small Business
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/organization">
+                        <NavLink activeStyle={{borderBottom:"2px solid #fff"}} to="/organization">
                             Organization
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/pricing">
+                        <NavLink activeStyle={{borderBottom:"2px solid #fff"}} to="/pricing">
                             Pricing
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/faqs">
+                        <NavLink activeStyle={{borderBottom:"2px solid #fff"}} to="/faqs">
                             FAQs
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

@@ -8,7 +8,7 @@ function Banner(){
         animationFunction('animation-div')
     })
     return(
-        <section className="banner-organization sp-60 height-85 flex-center-align flex-column tab-height">
+        <section className="banner-organization sp-60 height-80 flex-center-align flex-column tab-height">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 flex-center-align flex-column flex-align-start flex-initial animation-div">
@@ -19,7 +19,7 @@ function Banner(){
                          </div>
 
                         <div className="col-lg-6 pt-30 tab-center">
-                            <img className="classic-img" src={`${process.env.PUBLIC_URL}/images/organization-banner.png`} alt="menu-icon" />
+                            <img className="classic-img-2" src={`${process.env.PUBLIC_URL}/images/organization-banner.png`} alt="menu-icon" />
                         </div>
                     </div>
                 </div>
